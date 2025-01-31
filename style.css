@@ -1,0 +1,162 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica';
+    line-height: 1.6;
+    background-color: #E4E0DD;
+}
+
+.central-block {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Dance';
+    font-size: 86px;
+    text-align: right;
+    font-weight: 500;
+}
+/* Шапка */
+
+.header {
+    height: 70px;
+    background-color: #E4E0DD;
+    color: #4D4E4E;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    background-color: #767a6f;
+    padding: 5px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    clip-path: inset(0% 5%);
+}
+
+.header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img{
+    height: 50px;
+}
+
+.header nav {
+    display: flex;
+    gap: 60px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #4D4E4E;
+}
+
+.header nav a:hover { 
+    color: #0F780A; 
+}
+/* Секции */
+
+#hero {
+    background-color: #E4E0DD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-image {
+    background-image: url('img/intro.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+
+    /* z-index: 10; */
+}
+
+.text-container {
+
+    position: absolute;
+
+}
+
+
+
+/* .intro-image img {
+    height: 810px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 130px; 
+} */
+
+#classes {
+    height: 1550px;
+    background-color: aqua;
+}
+
+#studio {
+    height: 410px;
+    background-color: aquamarine;
+}
+
+#gallery {
+    height: 1270px;
+    background-color: blue;
+}
+
+#pricing {
+    height: 700px;
+    background-color: yellow;
+}
+
+#teachers {
+    height: 940px;
+    background-color: pink;
+}
+
+#contacts {
+    height: 570px;
+    background-color: paleturquoise;
+}
+
+/* Футер */
+
+.footer {
+    height: 400px;
+    background-color: #8A877E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@font-face {
+    font-family: 'Dance';
+    src: url(/fonts/dance_partner_0.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url(/fonts/helvetica_regular.otf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
