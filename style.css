@@ -55,7 +55,7 @@ h1 {
     border: none; /* Убираем границу */
     border-radius: 10px; /* Скругление углов */
     font-size: 12px; /* Размер текста */
-    font-family: Arial, sans-serif; /* Шрифт */
+    font-family: 'Helvetica';
     cursor: pointer; /* Курсор в виде указателя */
     transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
     margin-right: 44px;
@@ -118,15 +118,39 @@ h1 {
 }
 
 .text-container {
-
+    font-family: 'Helvetica';
+    color: #2F312A;
     position: absolute;
     margin-left: 888px;
     margin-top: 464px;
+}
+
+.text-container h3 {
+    font-size: 35px;
+}
+
+.text-container p {
+    font-size: 20px;
+}
+
+.text-container .call-button {
+    width: 294px;
+    height: 80px;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 17px;
+    background-color: #F4F0EC;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
 
 }
 
-
-
+.text-container .call-button a {
+    height: 80px;
+    color: #7E8276;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* .intro-image img {
     height: 810px;
     width: 1200px;
