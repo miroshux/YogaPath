@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Helvetica';
+    font-size: 20px;
     line-height: 1.6;
     background-color: #E4E0DD;
 }
@@ -17,35 +18,60 @@ body {
     padding: 0;
 }
 
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0;
+.title {
+    text-align: right;
+    position: absolute;
+    line-height: 0.9;
+    margin-left: 144px;
+    margin-top: 100px;
 }
 
 h1 {
     font-family: 'Dance';
-    font-size: 86px;
-    text-align: right;
+    font-size: 120px;
     font-weight: 500;
+    color: #2F312A;
+}
+
+.text-container h2 {
+    font-family: 'Comforter';
+    font-size: 120px;
+    font-weight: 400;
+    color: #2F312A;
 }
 /* Шапка */
 
 .header {
     height: 70px;
     background-color: #E4E0DD;
-    color: #4D4E4E;
     display: flex;
     align-items: center;
 }
 
-.btn {
-    background-color: #767a6f;
-    padding: 5px 5px;
-    border: none;
-    cursor: pointer;
-    border-radius: 40px;
-    clip-path: inset(0% 5%);
+.call-button {
+    width: 182px; /* Ширина кнопки */
+    height: 48px; /* Высота кнопки */
+    background-color: #7E8276; /* Цвет фона */
+    border: none; /* Убираем границу */
+    border-radius: 10px; /* Скругление углов */
+    font-size: 12px; /* Размер текста */
+    font-family: Arial, sans-serif; /* Шрифт */
+    cursor: pointer; /* Курсор в виде указателя */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+    margin-right: 44px;
+}
+
+.call-button:hover {
+    background-color: #6a6d63; /* Цвет фона при наведении */
+}
+
+.call-button a {
+    text-decoration: none;
+    color: white;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header .container {
@@ -57,6 +83,7 @@ h1 {
 
 .logo img{
     height: 50px;
+    margin-left: 44px;
 }
 
 .header nav {
@@ -66,19 +93,18 @@ h1 {
 
 .header nav a {
     text-decoration: none;
-    color: #4D4E4E;
+    color: #7E8276;
 }
 
 .header nav a:hover { 
-    color: #0F780A; 
+    color: #6a6d63;; 
 }
 /* Секции */
 
 #hero {
     background-color: #E4E0DD;
     display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .intro-image {
@@ -94,6 +120,8 @@ h1 {
 .text-container {
 
     position: absolute;
+    margin-left: 888px;
+    margin-top: 464px;
 
 }
 
@@ -157,6 +185,13 @@ h1 {
 @font-face {
     font-family: 'Helvetica';
     src: url(/fonts/helvetica_regular.otf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comforter';
+    src: url(/fonts/Comforter-Regular.ttf) format('truetype');
     font-weight: 400;
     font-style: normal;
 }
