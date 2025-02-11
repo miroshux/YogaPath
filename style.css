@@ -8,7 +8,6 @@
 body {
     font-family: 'Helvetica';
     font-size: 20px;
-    line-height: 1.6;
     background-color: #E4E0DD;
 }
 
@@ -18,27 +17,6 @@ body {
     padding: 0;
 }
 
-.title {
-    text-align: right;
-    position: absolute;
-    line-height: 0.9;
-    margin-left: 144px;
-    margin-top: 100px;
-}
-
-h1 {
-    font-family: 'Dance';
-    font-size: 120px;
-    font-weight: 500;
-    color: #2F312A;
-}
-
-.text-container h2 {
-    font-family: 'Comforter';
-    font-size: 120px;
-    font-weight: 400;
-    color: #2F312A;
-}
 /* Шапка */
 
 .header {
@@ -99,6 +77,7 @@ h1 {
 .header nav a:hover { 
     color: #6a6d63;; 
 }
+
 /* Секции */
 
 #hero {
@@ -109,12 +88,35 @@ h1 {
 
 .intro-image {
     background-image: url('img/intro.jpg');
+    border-radius: 20px;
     background-size: cover;
     width: 100vw;
-    height: 80vh;
+    height: 972px;
     position: relative;
 
     /* z-index: 10; */
+}
+
+.title {
+    text-align: right;
+    position: absolute;
+    line-height: 0.9;
+    margin-left: 144px;
+    margin-top: 100px;
+}
+
+h1 {
+    font-family: 'Dance';
+    font-size: 120px;
+    font-weight: 500;
+    color: #2F312A;
+}
+
+.text-container h2 {
+    font-family: 'Comforter';
+    font-size: 120px;
+    font-weight: 400;
+    color: #2F312A;
 }
 
 .text-container {
@@ -126,11 +128,14 @@ h1 {
 }
 
 .text-container h3 {
+    font-weight: 500;
     font-size: 35px;
 }
 
 .text-container p {
     font-size: 20px;
+    line-height: 1.2;
+    
 }
 
 .text-container .call-button {
@@ -151,19 +156,129 @@ h1 {
     align-items: center;
     justify-content: center;
 }
-/* .intro-image img {
-    height: 810px;
-    width: 1200px;
+
+#classes {
+    max-height: 1550px;
+}
+
+#classes h2 {
+    font-family: 'Dance';
+    font-size: 100px;
+    font-weight: 500;
+    color: #2F312A;
+    margin-left: 140px;
+    margin-top: 80px;
+}
+#classes h3 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-left: 140px;
+    color: #2F312A;
+    -webkit-text-stroke: #E4E0DD 0.5px;
+}
+
+.container p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 30px;
+    color: #2F312A;
+}
+
+.text-and-button {
+    margin-left: 140px;
+    width: 1160px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.next-back-button {
+    margin-left: 20px;
+    height: 48px;
+    width: 114px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px; /* Расстояние между карточками */
+}
+
+.next-back-button img {
+    height: 14px;
+}
+
+.back-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-top: 130px; 
-} */
-
-#classes {
-    height: 1550px;
-    background-color: aqua;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #CCC6B6;
+    opacity: 70%;
 }
+
+.next-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #7E8276;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    gap: 20px; /* Расстояние между карточками */
+    margin-left: 140px; /* Оставляем отступ слева, как у вас было */
+}
+
+.wrapper .call-button {
+    height: 46px;
+    width: 176px;
+    margin-top: 175px;
+}
+
+
+.card {
+    background-color: #F4F0EC;
+    width: 328px;
+    height: 636px;
+    border-radius: 10px;
+    padding: 14px;
+    margin-top: 40px;
+    color: #2F312A;
+}
+
+.card-img {
+    width: 300px;
+    height: 380px;
+    border-radius: 8px;
+}
+
+.card-title {
+    margin-top: 5px;
+    font-family: 'Dance';
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+}
+
+.card-text {
+    margin-top: 40px;
+    position: absolute;
+    font-size: 15.7px;
+}
+
+#card3 .card-text {
+    margin-top: 70px;
+}
+
+#card4 .card-text {
+    margin-top: 70px;
+}
+
 
 #studio {
     height: 410px;
