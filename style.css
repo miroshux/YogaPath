@@ -298,9 +298,34 @@ h1 {
     text-align: right;
 }
 
-#studio {
+#about {
+    margin-top: 80px;
+    margin-left: 140px;
     height: 410px;
-    background-color: aquamarine;
+    width: 1160px;
+    text-align: right;
+
+}
+
+#about .button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 36px;
+}
+
+#about h2 {
+    font-family: 'Dance';
+    font-size: 100px;
+    font-weight: 400;
+    color: #2F312A;
+}
+
+#about .yogapath {
+    font-family: 'Comforter';
+    font-size: 70px;
+    font-weight: 400;
+    color: #2F312A;
+    margin-right: 15px;
 }
 
 #gallery {
